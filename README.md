@@ -1,2 +1,3 @@
-# ADA_buch
-multi-format book typesetting
+# ADA_m-buch
+
+Multi-format book typesetting / Schriftsatz
