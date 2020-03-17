@@ -23,6 +23,10 @@ font-style: normal;
 font-weight: 700;
 src: local('Noticia Text Bold'), local('NoticiaText-Bold'), url(NoticiaText-Bold_2.woff) format('woff');}
 
+@page {
+  size: 152mm 229mm;
+}
+
 div#print {
     font-size: 9pt;
 }
@@ -199,7 +203,7 @@ figure {
 .article-body h1:not(:empty):before {
     counter-increment: heading;
     /* add 1 to heading */
-    
+
     content: counter(heading) " ";
     width: 2em;
     display: inline-block;

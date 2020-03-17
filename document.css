@@ -2,6 +2,9 @@ body {
     counter-reset: figure-cat-0 figure-cat-1 figure-cat-2 footnote-counter footnote-marker-counter;
 }
 
+@page {
+  size: 152mm 229mm;
+}
 
 /* CSL */
 
