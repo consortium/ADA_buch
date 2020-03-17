@@ -45,10 +45,6 @@ src: local('Noticia Text Bold'), local('NoticiaText-Bold'), url(NoticiaText-Bold
     }
 }
 
-p {
-    page-break-after: always;
-}
-
 div#print {
     font-size: 9pt;
 }
