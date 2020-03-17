@@ -45,6 +45,32 @@ src: local('Noticia Text Bold'), local('NoticiaText-Bold'), url(NoticiaText-Bold
     }
 }
 
+@page {
+    counter-reset: footnote 0;
+}
+
+@page {
+    @footnote {
+        border-top: dashed red 1px;
+        float: bottom;
+    }
+}
+
+span.footnote {
+    float: footnote;
+}
+
+.footnote::footnote-call {
+    content: counter(footnote, decimal) " ";
+    color: green;
+}
+
+.footnote::footnote-marker {
+    content: counter(footnote, lower-roman);
+    font-size: 14pt;
+    color: blue;
+}
+
 div#print {
     font-size: 9pt;
 }
