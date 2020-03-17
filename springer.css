@@ -27,6 +27,28 @@ src: local('Noticia Text Bold'), local('NoticiaText-Bold'), url(NoticiaText-Bold
   size: 152mm 229mm;
 }
 
+@page {
+    counter-increment: page;
+}
+
+@page:left {
+    @bottom-left {
+         content: counter(page) " of " counter(pages);
+         font-family: Arial, Sans Serif;
+    }
+}
+
+@page:right {
+    @bottom-right {
+         content: counter(page) " of " counter(pages);
+         font-family: Arial, Sans Serif;
+    }
+}
+
+p {
+    page-break-after: always;
+}
+
 div#print {
     font-size: 9pt;
 }
