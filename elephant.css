@@ -68,15 +68,15 @@ p:first-of-type {
 }
 
 h1.part  {
-   string-set: doctitle content();
+   /*string-set: doctitle content();*/
    font-size: 36px;
    color: rgb(58,172,196);
    font-weight: normal;
    /*font-size: 24pt;*/
    margin-bottom: 2em;
    margin-top: 2em;
-   page-break-inside: avoid;
-   page-break-after: avoid;
+    /*page-break-inside: avoid;
+   page-break-after: avoid;*/
    page-break-before: always;
    text-align: center;
    text-transform: none;
