@@ -23,6 +23,21 @@ font-style: normal;
 font-weight: 700;
 src: local('Noticia Text Bold'), local('NoticiaText-Bold'), url(NoticiaText-Bold_2.woff) format('woff');}
 
+@page {
+  size: 127mm 203mm;
+  margin-top: 15mm;
+  margin-bottom: 15mm;
+}
+
+html {
+  font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
+  font-weight: normal;
+  font-size: 10.75pt;
+  color: black;
+  hyphens: auto;
+}
+
+
 .user-contents {
     font-family: 'Noticia Text', serif;
     font-weight: 400;
