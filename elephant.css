@@ -75,9 +75,9 @@ h1.part  {
    /*font-size: 24pt;*/
    margin-bottom: 2em;
    margin-top: 2em;
-   /*page-break-inside: avoid;
-   page-break-after: avoid;*/
-   page-break-after: left;
+   page-break-inside: avoid;
+   page-break-after: avoid;
+   page-break-before:left;
    text-align: center;
    text-transform: none;
    adobe-hyphenate: none;
@@ -89,7 +89,7 @@ h1.part  {
 }
 
 a, a:hover {
-   color: grey;
+   color: red;
    -ms-word-break: break-all;
      word-break: break-all;
 
