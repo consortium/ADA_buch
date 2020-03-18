@@ -75,8 +75,8 @@ h1.part  {
    /*font-size: 24pt;*/
    margin-bottom: 2em;
    margin-top: 2em;
-   page-break-inside: avoid;
-   page-break-after: avoid;
+   /*page-break-inside: avoid;
+   page-break-after: avoid;*/
    page-break-before:left;
    text-align: center;
    text-transform: none;
