@@ -105,7 +105,7 @@ h1.part  {
   @bottom-left {
     margin: 5pt 0 15pt 0;
   /*  border-top: .25pt solid #666;*/
-    content: "Our Cats";
+    content: "Book name";
     font-size: 9pt;
     color: #333;
   }
@@ -129,7 +129,7 @@ h1.part  {
   @bottom-right {
     margin: 5pt 0 15pt 0;
     /*border-top: .25pt solid #666;*/
-    content: "Our Cats";
+    content: "Book name";
     font-size: 9pt;
     color: #333;
   }
