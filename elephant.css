@@ -1,27 +1,33 @@
-@font-face {font-family: 'Source Sans Pro';
-font-style: normal;
-font-weight: 700;
-src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(SourceSansPro-Bold.woff) format('woff');}
-
-@font-face {font-family: 'Noticia Text';
-font-style: italic;
-font-weight: 700;
-src: local('Noticia Text Bold Italic'), local('NoticiaText-BoldItalic'), url(NoticiaText-BoldItalic.woff) format('woff');}
-
-@font-face {font-family: 'Noticia Text';
-font-style: italic;
-font-weight: 400;
-src: local('Noticia Text Italic'), local('NoticiaText-Italic'), url(NoticiaText-Italic.woff) format('woff');}
-
-@font-face {font-family: 'Noticia Text';
-font-style: normal;
-font-weight: 400;
-src: local('Noticia Text'), local('NoticiaText-Regular'), url(NoticiaText-Regular.woff) format('woff');}
-
-@font-face {font-family: 'Noticia Text';
-font-style: normal;
-font-weight: 700;
-src: local('Noticia Text Bold'), local('NoticiaText-Bold'), url(NoticiaText-Bold_2.woff) format('woff');}
+@font-face {
+    font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
+    font-weight : normal;
+    font-style: normal;
+    src : url(../fonts/NotoSans-Regular.ttf);
+}
+@font-face {
+    font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
+    font-weight : bold;
+    font-style: normal;
+    src : url(../fonts/NotoSans-Bold.ttf);
+}
+@font-face {
+    font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
+    font-weight : normal;
+    font-style: italic;
+    src : url(../fonts/NotoSans-Italic.ttf);
+}
+@font-face {
+    font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
+    font-weight : bold;
+    font-style: italic;
+    src : url(../fonts/NotoSans-BoldItalic.ttf);
+}
+-@font-face {
+    font-family : -apple-system,BlinkMacSystemFont,"noto sans medium",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
+    font-weight : normal;
+    font-style: normal;
+    src : url(../fonts/NotoSans-Medium.ttf);
+}
 
 @page {
   size: 127mm 203mm;
@@ -37,6 +43,25 @@ html {
   hyphens: auto;
 }
 
+p {
+  font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
+  font-size: 9pt;
+  line-height: 14pt;
+  /*text-align: justify;*/
+  margin-bottom: 0pt;
+  letter-spacing: 0.2pt;
+  word-spacing: 0.2pt;
+  orphans: 2;
+  widows: 2;
+}
+
+p + p {
+  text-indent: 1.5em;
+  margin-top: 0 }
+
+p:first-of-type {
+  text-indent: 0;
+}
 
 .user-contents {
     font-family: 'Noticia Text', serif;
