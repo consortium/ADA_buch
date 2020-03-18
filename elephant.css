@@ -86,6 +86,11 @@ src: local('Noticia Text Bold'), local('NoticiaText-Bold'), url(NoticiaText-Bold
     margin-top: 25px;
 }
 
+h1  {
+   font-size: 36px;
+   color: red;
+}
+
 .user-contents h1,
 .user-contents h2,
 .user-contents h3,
@@ -113,7 +118,6 @@ src: local('Noticia Text Bold'), local('NoticiaText-Bold'), url(NoticiaText-Bold
 
 .user-contents h1  {
     font-size: 36px;
-    color: red;
 }
 
 .user-contents h2 {
