@@ -68,6 +68,8 @@ p:first-of-type {
   text-indent: 0;
 }
 
+
+
 h1.part  {
    string-set: part content();
    font-size: 36px;
@@ -89,8 +91,12 @@ h1.part  {
    word-spacing: 1px;
 }
 
+.par {
+   string-set: par content()
+}
+
 a, a:hover {
-   color: red;
+   color: green;
    text-decoration: underline;
 
    -ms-word-break: break-all;
@@ -118,7 +124,7 @@ a, a:hover {
   word-spacing: 1px;
 }
 
-@-epubx-partition class(part) {
+@-epubx-partition class() {
    -epubx-flow-from: booktitle;
    -epubx-enabled: -epubx-expr( page-number % 2==1 ? 'true': 'false');
    right: 15mm;
