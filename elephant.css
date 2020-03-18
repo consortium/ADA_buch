@@ -69,7 +69,7 @@ p:first-of-type {
 }
 
 h1.part  {
-   /*string-set: doctitle content();*/
+  string-set: doctitle content();
    font-size: 36px;
    color: rgb(58,172,196);
    font-weight: normal;
@@ -126,7 +126,7 @@ a, a:hover {
 
   @top-right {
     /*margin: 5pt 0 15pt 0;*/
-    content: "Right: ";
+    content: "Right:" string(doctitle);
     /*margin: 30pt 0 10pt 0;*/
     font-size: 9pt;
     color: #333;
