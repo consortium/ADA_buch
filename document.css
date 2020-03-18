@@ -65,8 +65,8 @@ figure img {
 }
 
 figure {
-    width: calc(80% - 12px);
-    border: 1px solid black;
+    width: 100%;
+    border: none;
     padding: 5px;
     text-align: center;
     break-inside: avoid;
@@ -92,7 +92,7 @@ figure {
 }
 
 .image-width-100 {
-    width: 80%;
+    width: 100%;
     box-sizing:border-box;
 }
 
