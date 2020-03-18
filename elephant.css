@@ -44,7 +44,7 @@ html {
 }
 
 body {
-    counter-reset: figure-cat-0 figure-cat-1 figure-cat-2 footnote-counter footnote-marker-counter doctitle;
+    counter-reset: figure-cat-0 figure-cat-1 figure-cat-2 footnote-counter footnote-marker-counter;
     font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
 }
 
@@ -68,10 +68,8 @@ p:first-of-type {
   text-indent: 0;
 }
 
-
-
 h1.part  {
-   string-set: part content();
+    /*string-set: doctitle content();*/
    font-size: 36px;
    color: rgb(58,172,196);
    font-weight: normal;
@@ -91,12 +89,8 @@ h1.part  {
    word-spacing: 1px;
 }
 
-.par {
-   /*string-set: par content()*/
-}
-
 a, a:hover {
-   color: green;
+   color: red;
    text-decoration: underline;
 
    -ms-word-break: break-all;
@@ -111,27 +105,13 @@ a, a:hover {
 
 
 }
-.booktitle {
-  -epubx-flow-into: booktitle;
-  -epubx-flow-options: exclusive static last;
-  text-transform: none;
-  font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
-  font-weight: normal;
-  font-style: italic;
-  /* text-transform: uppercase !important; */
-  font-size: 9pt;
-  letter-spacing: 0.2pt;
-  word-spacing: 1px;
-}
-
-
 
 @page:right {
 
   @bottom-left {
     margin: 5pt 0 15pt 0;
   /*  border-top: .25pt solid #666;*/
-    content: "HOlA";
+    content: "Gesunheit";
     font-size: 9pt;
     color:green;
   }
@@ -145,9 +125,9 @@ a, a:hover {
   }
 
   @top-right {
-  margin: 5pt 0 15pt 0;
-    content: string(part);
-
+    /*margin: 5pt 0 15pt 0;*/
+    content: "Right:" string(doctitle);
+    /*margin: 30pt 0 10pt 0;*/
     font-size: 9pt;
     color: #333;
   }
