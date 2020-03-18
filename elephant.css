@@ -124,11 +124,7 @@ a, a:hover {
   word-spacing: 1px;
 }
 
-@-epubx-partition class() {
-   -epubx-flow-from: booktitle;
-   -epubx-enabled: -epubx-expr( page-number % 2==1 ? 'true': 'false');
-   right: 15mm;
- }
+
 
 @page:right {
 
