@@ -44,7 +44,7 @@ html {
 }
 
 body {
-    counter-reset: figure-cat-0 figure-cat-1 figure-cat-2 footnote-counter footnote-marker-counter;
+    counter-reset: figure-cat-0 figure-cat-1 figure-cat-2 footnote-counter footnote-marker-counter doctitle;
     font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
 }
 
@@ -105,6 +105,24 @@ a, a:hover {
 
 
 }
+.booktitle {
+  -epubx-flow-into: booktitle;
+  -epubx-flow-options: exclusive static last;
+  text-transform: none;
+  font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  /* text-transform: uppercase !important; */
+  font-size: 9pt;
+  letter-spacing: 0.2pt;
+  word-spacing: 1px;
+}
+
+@-epubx-partition class(header) {
+   -epubx-flow-from: booktitle;
+   -epubx-enabled: -epubx-expr( page-number % 2==1 ? 'true': 'false');
+   right: 15mm;
+ }
 
 @page:right {
 
@@ -124,13 +142,13 @@ a, a:hover {
     font-size: 9pt;
   }
 
-  @top-right {
-    /*margin: 5pt 0 15pt 0;*/
+/*  @top-right {
+  margin: 5pt 0 15pt 0;
     content: "Right:" string(doctitle);
-    /*margin: 30pt 0 10pt 0;*/
+
     font-size: 9pt;
     color: #333;
-  }
+  }*/
 }
 
 @page:left {
