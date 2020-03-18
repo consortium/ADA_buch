@@ -30,11 +30,7 @@
 }
 
 @page {
-<<<<<<< HEAD
-  size: 152mm 229mm;
-=======
   size: 152mm 293mm;
->>>>>>> 97c61d9a6d9f8b8c17b951f76130d0e7c2aa71a2
   /*margin-top: 15mm;
   margin-bottom: 15mm;*/
 }
@@ -331,4 +327,12 @@ a, a:hover {
 
 .equation {
     font-size: 80%;
+}
+
+/* pages layout */
+
+@-epubx-page-master first-page-cover {
+  -epubx-page: 1;
+  background: url("cover.jpg");
+  background-size: cover;
 }
