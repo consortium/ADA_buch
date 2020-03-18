@@ -104,7 +104,7 @@ h1.part  {
 
   @bottom-left {
     margin: 5pt 0 15pt 0;
-    border-top: .25pt solid #666;
+  /*  border-top: .25pt solid #666;*/
     content: "Our Cats";
     font-size: 9pt;
     color: #333;
@@ -112,14 +112,14 @@ h1.part  {
 
   @bottom-right {
     margin: 5pt 0 15pt 0;
-    border-top: .25pt solid #666;
+    /*border-top: .25pt solid #666;*/
     content: counter(page);
     font-size: 9pt;
   }
 
   @top-right {
     content:  string(doctitle);
-    margin: 30pt 0 10pt 0;
+    /*margin: 30pt 0 10pt 0;*/
     font-size: 9pt;
     color: #333;
   }
@@ -128,7 +128,7 @@ h1.part  {
 @page:left {
   @bottom-right {
     margin: 5pt 0 15pt 0;
-    border-top: .25pt solid #666;
+    /*border-top: .25pt solid #666;*/
     content: "Our Cats";
     font-size: 9pt;
     color: #333;
@@ -136,7 +136,7 @@ h1.part  {
 
   @bottom-left {
     margin: 5pt 0 15pt 0;
-    border-top: .25pt solid #666;
+    /*border-top: .25pt solid #666;*/
     content: counter(page);
     font-size: 9pt;
   }
