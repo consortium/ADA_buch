@@ -113,6 +113,7 @@ src: local('Noticia Text Bold'), local('NoticiaText-Bold'), url(NoticiaText-Bold
 
 .user-contents h1  {
     font-size: 36px;
+    color: red;
 }
 
 .user-contents h2 {
