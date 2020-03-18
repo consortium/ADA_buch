@@ -45,6 +45,7 @@ html {
 
 body {
     counter-reset: figure-cat-0 figure-cat-1 figure-cat-2 footnote-counter footnote-marker-counter;
+    font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
 }
 
 p {
@@ -68,7 +69,7 @@ p:first-of-type {
 }
 
 h1.part  {
-   /*string-set: doctitle content();*/
+  string-set: doctitle content();
    font-size: 36px;
    color: rgb(58,172,196);
    font-weight: normal;
@@ -110,9 +111,9 @@ a, a:hover {
   @bottom-left {
     margin: 5pt 0 15pt 0;
   /*  border-top: .25pt solid #666;*/
-    content: "Book name";
+    content: "Gesunheit";
     font-size: 9pt;
-    color: #333;
+    color:green;
   }
 
   @bottom-right {
@@ -124,8 +125,8 @@ a, a:hover {
   }
 
   @top-right {
-    margin: 5pt 0 15pt 0;
-    content: "Right: " string(doctitle);
+    /*margin: 5pt 0 15pt 0;*/
+    content: "Right:" string(doctitle);
     /*margin: 30pt 0 10pt 0;*/
     font-size: 9pt;
     color: #333;
@@ -135,8 +136,8 @@ a, a:hover {
 @page:left {
   @bottom-right {
     margin: 5pt 0 15pt 0;
-    border-top: .25pt solid #666;*/
-    content: "Bottom Left: " string(doctitle);
+    /*border-top: .25pt solid #666;*/
+    content: "Bottom Left: ";
     font-size: 9pt;
     color: #333;
   }
@@ -149,14 +150,56 @@ a, a:hover {
   }
 
   @top-left {
-    margin: 5pt 0 15pt 0;
-    content: "Left: " string(doctitle);
+    /*margin: 5pt 0 15pt 0;*/
+    content: "Left: ";
     /*margin: 30pt 0 10pt 0;*/
     font-size: 9pt;
-    background-color:blue;
+    background-color:red;
     color: #333;
   }
 }
+
+
+blockquote {
+  position: relative;
+  font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
+  font-size: 9.75pt;
+  vertical-align: baseline;
+  margin-top: 9pt;
+  margin-bottom: 9pt;
+  margin-left: 1pc;
+  margin-right: 0pc;
+}
+
+blockquote:before {
+  font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
+  content: '';
+  font-size: 3em;
+  top: -0.2pc;
+  left: -1.2pc;
+  position: absolute;
+  color: #7089ab;
+  opacity: 0.6;
+}
+
+blockquote:after {
+  font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
+  content: '';
+  font-size: 3em;
+  bottom: -15pt;
+  right: -0.8pc;
+  position: absolute;
+  color: #7089ab;
+  opacity: 0.6;
+}
+
+blockquote p {
+  font-family: inherit;
+  text-align: left;
+  font-style: normal;
+}
+
+blockquote  p.att { text-align: right; }
 
 
 
@@ -321,7 +364,7 @@ a, a:hover {
 }
 
 .article-bibliography p {
-    font-size: 14px;
+    /*font-size: 14px;*/
     margin-bottom: 18px;
 }
 
