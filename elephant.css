@@ -71,7 +71,7 @@ h1.part  {
    font-size: 36px;
    color: rgb(58,172,196);
    font-weight: normal;
-   font-size: 24pt;
+   /*font-size: 24pt;*/
    margin-bottom: 2em;
    margin-top: 2em;
    page-break-inside: avoid;
@@ -103,7 +103,7 @@ h1.part  {
 @page:right {
 
   @bottom-left {
-    margin: 10pt 0 30pt 0;
+    margin: 5pt 0 15pt 0;
     border-top: .25pt solid #666;
     content: "Our Cats";
     font-size: 9pt;
@@ -111,7 +111,7 @@ h1.part  {
   }
 
   @bottom-right {
-    margin: 10pt 0 30pt 0;
+    margin: 5pt 0 15pt 0;
     border-top: .25pt solid #666;
     content: counter(page);
     font-size: 9pt;
@@ -127,7 +127,7 @@ h1.part  {
 
 @page:left {
   @bottom-right {
-    margin: 10pt 0 30pt 0;
+    margin: 5pt 0 15pt 0;
     border-top: .25pt solid #666;
     content: "Our Cats";
     font-size: 9pt;
@@ -135,7 +135,7 @@ h1.part  {
   }
 
   @bottom-left {
-    margin: 10pt 0 30pt 0;
+    margin: 5pt 0 15pt 0;
     border-top: .25pt solid #666;
     content: counter(page);
     font-size: 9pt;
