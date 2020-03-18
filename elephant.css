@@ -76,8 +76,8 @@ h1.part  {
    margin-bottom: 2em;
    margin-top: 2em;
    /*page-break-inside: avoid;
-   page-break-after: avoid;*/
-   page-break-before:left;
+   page-break-after: avoid;
+   page-break-before:left;*/
    text-align: center;
    text-transform: none;
    adobe-hyphenate: none;
