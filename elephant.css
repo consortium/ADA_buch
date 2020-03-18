@@ -110,7 +110,7 @@ a, a:hover {
   @bottom-left {
     margin: 5pt 0 15pt 0;
   /*  border-top: .25pt solid #666;*/
-    content: "Book name";
+    content: "BOOK";
     font-size: 9pt;
     color: #333;
   }
@@ -124,7 +124,7 @@ a, a:hover {
   }
 
   @top-right {
-    margin: 5pt 0 15pt 0;
+    /*margin: 5pt 0 15pt 0;*/
     content: "Right: " string(doctitle);
     /*margin: 30pt 0 10pt 0;*/
     font-size: 9pt;
@@ -149,7 +149,7 @@ a, a:hover {
   }
 
   @top-left {
-    margin: 5pt 0 15pt 0;
+    /*margin: 5pt 0 15pt 0;*/
     content: "Left: " string(doctitle);
     /*margin: 30pt 0 10pt 0;*/
     font-size: 9pt;
