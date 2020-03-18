@@ -110,9 +110,9 @@ a, a:hover {
   @bottom-left {
     margin: 5pt 0 15pt 0;
   /*  border-top: .25pt solid #666;*/
-    content: "BOOK";
+    content: "Gesunheit";
     font-size: 9pt;
-    color: #333;
+    color:green;
   }
 
   @bottom-right {
