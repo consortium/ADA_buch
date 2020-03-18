@@ -30,7 +30,7 @@
 }
 
 @page {
-  size: 152mm 293mm;
+  size: 152mm 229mm;
   /*margin-top: 15mm;
   margin-bottom: 15mm;*/
 }
@@ -125,7 +125,7 @@ a, a:hover {
 
   @top-right {
     margin: 5pt 0 15pt 0;
-    content: "start: " string(doctitle);
+    content: "Right: " string(doctitle);
     /*margin: 30pt 0 10pt 0;*/
     font-size: 9pt;
     color: #333;
@@ -150,7 +150,7 @@ a, a:hover {
 
   @top-left {
     margin: 5pt 0 15pt 0;
-    content:  string(doctitle);
+    content: "Left: " string(doctitle);
     /*margin: 30pt 0 10pt 0;*/
     font-size: 9pt;
     background-color:blue;
