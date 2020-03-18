@@ -63,6 +63,27 @@ p:first-of-type {
   text-indent: 0;
 }
 
+h1.part  {
+   font-size: 36px;
+   color: rgb(58,172,196);
+   font-weight: normal;
+   font-size: 24pt;
+   margin-bottom: 2em;
+   margin-top: 2em;
+   page-break-inside: avoid;
+   page-break-after: avoid;
+   text-align: center;
+   text-transform: none;
+   adobe-hyphenate: none;
+   -webkit-hyphens: none;
+   -epub-hyphens: none;
+   hyphens: none;
+   letter-spacing: 0pt;
+ word-spacing: 1px;
+}
+
+
+
 .user-contents {
     font-family: 'Noticia Text', serif;
     font-weight: 400;
@@ -126,10 +147,6 @@ p:first-of-type {
     margin-top: 25px;
 }
 
-h1  {
-   font-size: 36px;
-   color: red;
-}
 
 .user-contents h1,
 .user-contents h2,
