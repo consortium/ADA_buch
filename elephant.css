@@ -30,7 +30,11 @@
 }
 
 @page {
+<<<<<<< HEAD
   size: 152mm 229mm;
+=======
+  size: 152mm 293mm;
+>>>>>>> 97c61d9a6d9f8b8c17b951f76130d0e7c2aa71a2
   /*margin-top: 15mm;
   margin-bottom: 15mm;*/
 }
@@ -68,16 +72,16 @@ p:first-of-type {
 }
 
 h1.part  {
-   string-set: doctitle content();
+   /*string-set: doctitle content();*/
    font-size: 36px;
    color: rgb(58,172,196);
    font-weight: normal;
    /*font-size: 24pt;*/
    margin-bottom: 2em;
    margin-top: 2em;
-   /*page-break-inside: avoid;
-   page-break-after: avoid;
-   page-break-before:left;*/
+    /*page-break-inside: avoid;
+   page-break-after: avoid;*/
+   page-break-before: always;
    text-align: center;
    text-transform: none;
    adobe-hyphenate: none;
@@ -90,6 +94,7 @@ h1.part  {
 
 a, a:hover {
    color: red;
+   text-decoration: underline;
 
    -ms-word-break: break-all;
      word-break: break-all;
@@ -97,11 +102,11 @@ a, a:hover {
      /* Non standard for WebKit */
      word-break: break-word;
 
-     -webkit-hyphens: auto;
-     -moz-hyphens: auto;
-     hyphens: auto;
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
 
-     text-decoration: underline;
+
 }
 
 @page:right {
@@ -124,7 +129,7 @@ a, a:hover {
 
   @top-right {
     margin: 5pt 0 15pt 0;
-    content:  string(doctitle);
+    content: "start: " string(doctitle);
     /*margin: 30pt 0 10pt 0;*/
     font-size: 9pt;
     color: #333;
@@ -161,7 +166,7 @@ a, a:hover {
 
 /*////////=======================ELEPHANT=========================///////*/
 .user-contents {
-    font-family: 'Noticia Text', serif;
+    /*font-family: 'Noticia Text', serif;
     font-weight: 400;
     font-size: 1.2em;
     /*text-align: justify;*/
@@ -173,14 +178,14 @@ a, a:hover {
 }
 
 .article-title {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 48px;
+    /*font-family: 'Source Sans Pro', sans-serif;*/
+    font-size: 20px;
     font-weight: 700;
 }
 
 .article-subtitle {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 40px;
+    /*font-family: 'Source Sans Pro', sans-serif;*/
+    font-size: 16px;
     font-weight: 900;
 }
 
@@ -195,7 +200,7 @@ a, a:hover {
 
 .pagination-footnote:before,
 .pagination-footnote > * > *:first-child:before {
-    font-family: 'Noticia Text', serif;
+    /*font-family: 'Noticia Text', serif;*/
     font-weight: 400;
     font-size: 9px;
     text-align: left;
@@ -208,13 +213,13 @@ a, a:hover {
 }
 
 .pagination-footnote > * > * {
-    font-family: 'Noticia Text', serif;
+  /*  font-family: 'Noticia Text', serif;*/
     font-weight: 400;
     font-size: 10px;
 }
 
 .pagination-pagenumber {
-    font-family: 'Source Sans Pro', sans-serif;
+  /*  font-family: 'Source Sans Pro', sans-serif;*/
     font-size: 12px;
     font-weight: 700;
 }
@@ -244,7 +249,7 @@ a, a:hover {
 .user-contents h4,
 .user-contents h5,
 .user-contents h6 {
-    font-family: 'Source Sans Pro', sans-serif;
+    /*font-family: 'Source Sans Pro', sans-serif;*/
     font-weight: 700;
     line-height: 1.25em;
 }
