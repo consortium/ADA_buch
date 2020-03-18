@@ -135,8 +135,8 @@ a, a:hover {
 @page:left {
   @bottom-right {
     margin: 5pt 0 15pt 0;
-    /*border-top: .25pt solid #666;*/
-    content:  string(doctitle);
+    border-top: .25pt solid #666;*/
+    content: "Bottom Left: " string(doctitle);
     font-size: 9pt;
     color: #333;
   }
