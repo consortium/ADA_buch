@@ -68,6 +68,7 @@ p:first-of-type {
 }
 
 h1.part  {
+  string-set: doctitle content();
    font-size: 36px;
    color: rgb(58,172,196);
    font-weight: normal;
