@@ -44,7 +44,7 @@ html {
 }
 
 body {
-    counter-reset: figure-cat-0 figure-cat-1 figure-cat-2 footnote-counter footnote-marker-counter page;
+    counter-reset: figure-cat-0 figure-cat-1 figure-cat-2 footnote-counter footnote-marker-counter page doctitle;
 }
 
 p {
@@ -111,6 +111,7 @@ h1.part  {
   }
 
   @bottom-right {
+
     margin: 5pt 0 15pt 0;
     /*border-top: .25pt solid #666;*/
     content: counter(page);
@@ -118,6 +119,7 @@ h1.part  {
   }
 
   @top-right {
+    margin: 5pt 0 15pt 0;
     content:  string(doctitle);
     /*margin: 30pt 0 10pt 0;*/
     font-size: 9pt;
@@ -139,6 +141,15 @@ h1.part  {
     /*border-top: .25pt solid #666;*/
     content: counter(page);
     font-size: 9pt;
+  }
+
+  @top-left {
+    margin: 5pt 0 15pt 0;
+    content:  string(doctitle);
+    /*margin: 30pt 0 10pt 0;*/
+    font-size: 9pt;
+    background-color:blue;
+    color: #333;
   }
 }
 
