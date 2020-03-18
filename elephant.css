@@ -69,7 +69,7 @@ p:first-of-type {
 }
 
 h1.part  {
-    /*string-set: doctitle content();*/
+   string-set: part content();
    font-size: 36px;
    color: rgb(58,172,196);
    font-weight: normal;
@@ -118,7 +118,7 @@ a, a:hover {
   word-spacing: 1px;
 }
 
-@-epubx-partition class(header) {
+@-epubx-partition class(part) {
    -epubx-flow-from: booktitle;
    -epubx-enabled: -epubx-expr( page-number % 2==1 ? 'true': 'false');
    right: 15mm;
@@ -129,7 +129,7 @@ a, a:hover {
   @bottom-left {
     margin: 5pt 0 15pt 0;
   /*  border-top: .25pt solid #666;*/
-    content: "Gesunheit";
+    content: "HOlA";
     font-size: 9pt;
     color:green;
   }
@@ -142,13 +142,13 @@ a, a:hover {
     font-size: 9pt;
   }
 
-/*  @top-right {
+  @top-right {
   margin: 5pt 0 15pt 0;
-    content: "Right:" string(doctitle);
+    content: string(part);
 
     font-size: 9pt;
     color: #333;
-  }*/
+  }
 }
 
 @page:left {
@@ -172,7 +172,7 @@ a, a:hover {
     content: "Left: ";
     /*margin: 30pt 0 10pt 0;*/
     font-size: 9pt;
-    background-color:green
+    background-color:red;
     color: #333;
   }
 }
