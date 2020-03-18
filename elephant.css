@@ -92,7 +92,7 @@ h1.part  {
 }
 
 .par {
-   string-set: par content()
+   /*string-set: par content()*/
 }
 
 a, a:hover {
