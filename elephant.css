@@ -81,6 +81,20 @@ h1.part  {
    letter-spacing: 0pt;
    word-spacing: 1px;
 }
+ a {
+
+   color: black;
+-ms-word-break: break-all;
+     word-break: break-all;
+
+     /* Non standard for WebKit */
+     word-break: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
+
+}
 
 /* create the layout of the body */
 
