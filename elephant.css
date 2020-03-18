@@ -328,3 +328,11 @@ a, a:hover {
 .equation {
     font-size: 80%;
 }
+
+/* pages layout */
+
+@-epubx-page-master first-page-cover {
+  -epubx-page: 1;
+  background: url("cover.jpg");
+  background-size: cover;
+}
