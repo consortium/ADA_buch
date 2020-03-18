@@ -74,8 +74,9 @@ h1.part  {
    /*font-size: 24pt;*/
    margin-bottom: 2em;
    margin-top: 2em;
-   page-break-inside: avoid;
-   page-break-after: avoid;
+   /*page-break-inside: avoid;
+   page-break-after: avoid;*/
+   page-break-after: left;
    text-align: center;
    text-transform: none;
    adobe-hyphenate: none;
@@ -85,9 +86,9 @@ h1.part  {
    letter-spacing: 0pt;
    word-spacing: 1px;
 }
- a {
 
-   color: black;
+a, a:hover {
+   color: grey;
    -ms-word-break: break-all;
      word-break: break-all;
 
@@ -97,7 +98,7 @@ h1.part  {
      -webkit-hyphens: auto;
      -moz-hyphens: auto;
      hyphens: auto;
-
+     text-decoration: underline;
 }
 
 @page:right {
