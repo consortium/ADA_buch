@@ -68,7 +68,7 @@ p:first-of-type {
 }
 
 h1.part  {
-   /*string-set: doctitle content();*/
+   string-set: doctitle content();
    font-size: 36px;
    color: rgb(58,172,196);
    font-weight: normal;
@@ -90,6 +90,7 @@ h1.part  {
 
 a, a:hover {
    color: red;
+
    -ms-word-break: break-all;
      word-break: break-all;
 
@@ -99,6 +100,7 @@ a, a:hover {
      -webkit-hyphens: auto;
      -moz-hyphens: auto;
      hyphens: auto;
+
      text-decoration: underline;
 }
 
