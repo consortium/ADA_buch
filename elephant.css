@@ -131,7 +131,7 @@ h1.part  {
   @bottom-right {
     margin: 5pt 0 15pt 0;
     /*border-top: .25pt solid #666;*/
-    content: "Book name";
+    content:  string(doctitle);
     font-size: 9pt;
     color: #333;
   }
