@@ -534,13 +534,13 @@ a {
 
 
 /*styles IMG TABLES*/
-img.rotate-180, table.rotate-180 {
-    -webkit-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-            transform: rotate(180deg);
+.rotate-180 {
+    -webkit-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+            transform: rotate(270deg);
 }
 
-img.pagebreak, table.pagebreak {
+.pagebreak {
 page-break-inside: avoid;
 page-break-after: avoid;
 
