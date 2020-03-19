@@ -336,9 +336,9 @@ h6 {
 }
 
 h1 {
-  font-weight: normal;
+  font-weight: bold;
   font-size: 24pt;
-  color: black;
+  color: rgb(58,172,196);
   margin-bottom: 2em;
   margin-top: 2em;
   page-break-inside: avoid;
@@ -534,13 +534,13 @@ a {
 
 
 /*styles IMG TABLES*/
-.rotate-180 {
+img.rotate-180, table.rotate-180 {
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
             transform: rotate(180deg);
 }
 
-.pagebreak {
+img.pagebreak, table.pagebreak {
 page-break-inside: avoid;
 page-break-after: avoid;
 
@@ -582,7 +582,10 @@ table td {
   border-left: 0;
   border-right: 0;
   text-align: right;
-  word-break: break-all; /*break words*/
+}
+
+table td a {
+ word-break: break-all; /*break words*/
 }
 
 table td:last-of-type {
