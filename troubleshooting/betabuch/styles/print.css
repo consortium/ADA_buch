@@ -534,17 +534,7 @@ a {
 
 
 /*styles IMG TABLES*/
-.rotate-180 {
-    -webkit-transform: rotate(270deg);
-        -ms-transform: rotate(270deg);
-            transform: rotate(270deg);
-}
 
-.pagebreak {
-page-break-inside: avoid;
-page-break-after: avoid;
-
-}
 
 table {
   margin: 0 auto;
@@ -562,46 +552,11 @@ table {
   font-size: 8pt;
 }
 
-.table-header-rotated {
-  border-collapse: collapse;
-  .csstransforms & td {
-    width: 30px;
-  }
-  .no-csstransforms & th {
-    padding: 5px 10px;
-  }
-  td {
-    text-align: center;
-    padding: 10px 5px;
-    border: 1px solid #ccc;
-  }
-  .csstransforms & th.rotate {
-    height: 140px;
-    white-space: nowrap;
-    // Firefox needs the extra DIV for some reason, otherwise the text disappears if you rotate
-    > div {
-      transform:
-        // Magic Numbers
-        translate(25px, 51px)
-        // 45 is really 360-45
-        rotate(315deg);
-      width: 30px;
-    }
-    > div > span {
-      border-bottom: 1px solid #ccc;
-      padding: 5px 10px;
-    }
-  }
-  th.row-header {
-    padding: 0 10px;
-    border-bottom: 1px solid #ccc;
-  }
-}
 
 
 table caption {
-  /*border-top: 1pt solid #435772;
-  border-bottom: 1pt solid #435772;*/
+  border-top: 1pt solid #435772;
+  border-bottom: 1pt solid #435772;
   padding: 1em;
   text-align: left;
   margin: 0 auto;
@@ -619,6 +574,7 @@ table td {
   border-left: 0;
   border-right: 0;
   text-align: right;
+  border-bottom: 1px solid rgb(231,231,231);
 }
 
 table td a {
@@ -665,7 +621,7 @@ th {
   padding: 1em;
   color: : black;
   font-style: italic;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 tr:first-of-type {
