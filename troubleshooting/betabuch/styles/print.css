@@ -613,7 +613,7 @@ tr:first-of-type th {
 
 tr:first-of-type td {
   font-style: italic;
-  background-color: rgb(215,238,243);
+  background-color: rgb(241,248,250);
   border-bottom: 2px solid rgb(15,100,167);
 
 }
