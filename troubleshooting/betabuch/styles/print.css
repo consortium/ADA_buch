@@ -568,6 +568,7 @@ table caption:before {
   font-style: italic;
 }
 
+
 table td {
   width: auto;
   border-left: 0;
@@ -628,7 +629,8 @@ th {
 }
 
 tr:first-of-type {
-  /*border-bottom: 1pt solid #435772;*/
+  border-bottom: 5px solid #435772;
+  backgroung-color: cyan;
 }
 
 tr:first-of-type td {
