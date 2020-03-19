@@ -32,7 +32,7 @@
     font-family : -apple-system,BlinkMacSystemFont,"noto sans medium",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
     font-weight : normal;
     font-style: normal;
-    src : url(../fonts/NotoSerif-Regular.ttf);
+    src : url(../fonts/NotoSans-Medium.ttf);
 }
 
 
@@ -336,7 +336,6 @@ h6 {
 }
 
 h1 {
-  font-family : -apple-system,BlinkMacSystemFont,"noto serif medium",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
   font-weight: bold;
   font-size: 24pt;
   color: rgb(58,172,196);
@@ -351,7 +350,7 @@ h1 {
   -epub-hyphens: none;
   hyphens: none;
   letter-spacing: 0pt;
-  word-spacing: 1px;
+word-spacing: 1px;
 }
 
 h2 {
@@ -397,8 +396,8 @@ h5 {
 
 body {
   counter-reset: chapter;
-  /*word-wrap: break-word;
-  overflow-wrap: break-word;*/
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .one ol li {
@@ -535,7 +534,17 @@ a {
 
 
 /*styles IMG TABLES*/
+.rotate-180 {
+    -webkit-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+            transform: rotate(270deg);
+}
 
+.pagebreak {
+page-break-inside: avoid;
+page-break-after: avoid;
+
+}
 
 table {
   margin: 0 auto;
@@ -553,15 +562,12 @@ table {
   font-size: 8pt;
 }
 
-
-
 table caption {
-  border-top: 1px solid #435772;
-  border-bottom: 1px solid #435772;
+  /*border-top: 1pt solid #435772;
+  border-bottom: 1pt solid #435772;*/
   padding: 1em;
   text-align: left;
   margin: 0 auto;
-  vertical-align: middle;
 }
 
 table caption:before {
@@ -575,15 +581,11 @@ table td {
   width: auto;
   border-left: 0;
   border-right: 0;
-  /*text-align: right;*/
-  border-bottom: 1px solid rgb(231,231,231);
-  margin: 8px 0px;
+  text-align: right;
 }
 
 table td a {
- /*word-break: break-all; break words url*/
- word-wrap: break-word;
- overflow-wrap: break-word;
+ word-break: break-all; /*break words*/
 }
 
 table td:last-of-type {
@@ -626,8 +628,7 @@ th {
   padding: 1em;
   color: : black;
   font-style: italic;
-  font-weight: bold;
-  background-color: green;
+  font-weight: normal;
 }
 
 tr:first-of-type {
@@ -637,8 +638,6 @@ tr:first-of-type {
 tr:first-of-type td {
   font-weight: normal;
   font-style: italic;
-  font-weight: bold;
-  background-color: red;
 }
 
 tr.head + tr td {
@@ -787,7 +786,7 @@ section[data-type="toc"] a:after {
   font-style: normal;
   font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
   margin-left: 10em;
-  content: leader('.') target-counter(attr(href, url), page);
+  content: target-counter(attr(href, url), page);
   display: inline-block;
   float: right;
 }
