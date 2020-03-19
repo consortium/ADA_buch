@@ -532,6 +532,20 @@ a {
   text-decoration: none;
 }
 
+
+/*styles IMG TABLES*/
+.rotate-180 {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+
+.pagebreak {
+page-break-inside: avoid;
+page-break-after: avoid;
+
+}
+
 table {
   margin: 0 auto;
   width: 95% !important;
@@ -568,6 +582,7 @@ table td {
   border-left: 0;
   border-right: 0;
   text-align: right;
+  word-break: break-all; /*break words*/
 }
 
 table td:last-of-type {
