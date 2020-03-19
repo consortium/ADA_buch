@@ -28,13 +28,6 @@
     font-style: normal;
     src : url(../fonts/NotoSans-Medium.ttf);
 }
--@font-face {
-    font-family : -apple-system,BlinkMacSystemFont,"noto sans medium",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
-    font-weight : normal;
-    font-style: normal;
-    src : url(../fonts/NotoSans-Medium.ttf);
-}
-
 
 h3.titlepageSub {
   color: black;
@@ -162,7 +155,7 @@ video {
 }
 
 @page {
-  size: 152mm 229mm;
+  size: 127mm 203mm;
   margin-top: 15mm;
   margin-bottom: 15mm;
 }
@@ -336,9 +329,9 @@ h6 {
 }
 
 h1 {
-  font-weight: bold;
+  font-weight: normal;
   font-size: 24pt;
-  color: rgb(58,172,196);
+  color: black;
   margin-bottom: 2em;
   margin-top: 2em;
   page-break-inside: avoid;
@@ -396,8 +389,6 @@ h5 {
 
 body {
   counter-reset: chapter;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
 }
 
 .one ol li {
@@ -532,20 +523,6 @@ a {
   text-decoration: none;
 }
 
-
-/*styles IMG TABLES*/
-.rotate-180 {
-    -webkit-transform: rotate(270deg);
-        -ms-transform: rotate(270deg);
-            transform: rotate(270deg);
-}
-
-.pagebreak {
-page-break-inside: avoid;
-page-break-after: avoid;
-
-}
-
 table {
   margin: 0 auto;
   width: 95% !important;
@@ -560,42 +537,6 @@ table {
   border-right: 0;
   text-align: left;
   font-size: 8pt;
-}
-
-.table-header-rotated {
-  border-collapse: collapse;
-  .csstransforms & td {
-    width: 30px;
-  }
-  .no-csstransforms & th {
-    padding: 5px 10px;
-  }
-  td {
-    text-align: center;
-    padding: 10px 5px;
-    border: 1px solid #ccc;
-  }
-  .csstransforms & th.rotate {
-    height: 140px;
-    white-space: nowrap;
-    // Firefox needs the extra DIV for some reason, otherwise the text disappears if you rotate
-    > div {
-      transform:
-        // Magic Numbers
-        translate(25px, 51px)
-        // 45 is really 360-45
-        rotate(315deg);
-      width: 30px;
-    }
-    > div > span {
-      border-bottom: 1px solid #ccc;
-      padding: 5px 10px;
-    }
-  }
-  th.row-header {
-    padding: 0 10px;
-    border-bottom: 1px solid #ccc;
-  }
 }
 
 table caption {
@@ -618,10 +559,6 @@ table td {
   border-left: 0;
   border-right: 0;
   text-align: right;
-}
-
-table td a {
- word-break: break-all; /*break words*/
 }
 
 table td:last-of-type {
@@ -785,8 +722,7 @@ section[data-type="toc"] h4 {
   margin-top: 1.2em;
   margin-bottom: 0em;
   letter-spacing: 0.2pt;
-  word-spacing: 1px;
-  font-size: 10pt;
+word-spacing: 1px;
 }
 
 section[data-type="toc"] ul li {
