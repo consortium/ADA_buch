@@ -573,12 +573,13 @@ table td {
   width: auto;
   border-left: 0;
   border-right: 0;
-  text-align: right;
+  /*text-align: right;*/
   border-bottom: 1px solid rgb(231,231,231);
+  margin: 5px 0px;
 }
 
 table td a {
- word-break: break-all; /*break words*/
+ word-break: break-all; /*break words url*/
 }
 
 table td:last-of-type {
@@ -631,6 +632,7 @@ tr:first-of-type {
 tr:first-of-type td {
   font-weight: normal;
   font-style: italic;
+  font-weight: bold;
 }
 
 tr.head + tr td {
