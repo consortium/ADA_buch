@@ -629,14 +629,14 @@ th {
 }
 
 tr:first-of-type {
-  border-bottom: 5px solid #435772;
-  backgroung-color: cyan;
+  border-bottom: 2px solid #435772;
+  backgroung-color: rgb(215,238,243);
 }
 
 tr:first-of-type td {
   font-style: italic;
   font-weight: bold;
-  background-color: red;
+  /*background-color: red;*/
 }
 
 tr.head + tr td {
