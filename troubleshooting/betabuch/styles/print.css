@@ -777,7 +777,7 @@ section[data-type="toc"] a {
 }
 
 section[data-type="toc"] a:after {
-  content: "123";
+  content: ".";
   font-style: normal;
   font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
   margin-left: 10em;
