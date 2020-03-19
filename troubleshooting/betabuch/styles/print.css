@@ -777,11 +777,11 @@ section[data-type="toc"] a {
 }
 
 section[data-type="toc"] a:after {
-  content: ".";
+  content: "123";
   font-style: normal;
   font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
   margin-left: 10em;
-  content: target-counter(attr(href, url), page);
+  content:leader('.') target-counter(attr(href, url), page);
   display: inline-block;
   float: right;
 }
