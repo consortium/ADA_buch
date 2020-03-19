@@ -553,8 +553,8 @@ table {
 
 
 table caption {
-  border-top: 1px solid rgb(231,231,231);
-  /*border-bottom: 1px solid #435772;*/
+  /*border-top: 1px solid rgb(231,231,231);
+  border-bottom: 1px solid #435772;*/
   padding: 1em;
   text-align: left;
   margin: 0 auto;
@@ -575,10 +575,10 @@ table td {
   border-right: 0;
   /*text-align: right;*/
   border-bottom: 1px solid rgb(231,231,231);
-  margin: 20px 0px;
+  
 }
 
-table td a {
+table a {
  /*word-break: break-all; break words url*/
  word-wrap: break-word;
  overflow-wrap: break-word;
@@ -608,6 +608,10 @@ tr:first-of-type th,
 tr:first-of-type td {
   padding-top: 1em;
   padding-bottom: 1em;
+  font-style: italic;
+  font-weight: bold;
+  backgroung-color: rgb(215,238,243);
+  border-bottom: 2px solid #435772;
 }
 
 tr:last-of-type td {
@@ -630,12 +634,12 @@ tr:first-of-type {
     font-weight: bold;
 }
 
-tr:first-of-type td {
+/*tr:first-of-type td {
   font-style: italic;
   font-weight: bold;
   backgroung-color: rgb(215,238,243);
   border-bottom: 2px solid #435772;
-}
+}*/
 
 tr.head + tr td {
   padding-top: 0.8em;
