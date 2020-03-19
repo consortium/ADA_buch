@@ -624,13 +624,12 @@ th {
   padding: 1em;
   color: : black;
   font-style: italic;
-  font-weight: bold;
-  background-color: green;
 }
 
 tr:first-of-type {
   border-bottom: 2px solid #435772;
   backgroung-color: rgb(215,238,243);
+  font-weight: bold;
 }
 
 tr:first-of-type td {
@@ -759,7 +758,7 @@ section[data-type="toc"] ul li {
   margin-left: 0;
   text-indent: 0;
   letter-spacing: 0.2pt;
-word-spacing: 0px;
+  word-spacing: 0px;
 }
 
 section[data-type="toc"] ul li p {
@@ -773,21 +772,22 @@ section[data-type="toc"] ul li:before {
 
 section[data-type="toc"] a {
   color: black;
-  font-weight: 300;
+  font-weight: 600;
   border-bottom: 0px solid transparent;
   background: none;
   text-shadow: none;
-  font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
+  /*font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;*/
 }
 
 section[data-type="toc"] a:after {
   content: "123";
-  font-style: normal;
-  font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
+  font-style: 600;
+  /*font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;*/
   margin-left: 10em;
   content: target-counter(attr(href, url), page);
   display: inline-block;
   float: right;
+  font-size: 10pt;
 }
 
 [data-name="cabbagetree"] {
