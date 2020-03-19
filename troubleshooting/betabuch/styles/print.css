@@ -611,7 +611,7 @@ tr:first-of-type td {
   font-style: italic;
   font-weight: bold;
   background-color: rgb(215,238,243);
-  border-bottom: 2px solid #435772;
+  border-bottom: 2px solid rgb(15,100,167);
 }
 
 tr:last-of-type td {
@@ -775,7 +775,7 @@ section[data-type="toc"] ul li:before {
 
 section[data-type="toc"] a {
   color: black;
-  font-weight: 600;
+  font-weight: 500;
   border-bottom: 0px solid transparent;
   background: none;
   text-shadow: none;
@@ -784,7 +784,7 @@ section[data-type="toc"] a {
 
 section[data-type="toc"] a:after {
   content: "123";
-  font-style: 600;
+  font-weight: 500;
   /*font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;*/
   margin-left: 10em;
   content: target-counter(attr(href, url), page);
