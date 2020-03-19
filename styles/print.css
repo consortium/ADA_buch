@@ -28,6 +28,13 @@
     font-style: normal;
     src : url(../fonts/NotoSans-Medium.ttf);
 }
+-@font-face {
+    font-family : -apple-system,BlinkMacSystemFont,"noto sans medium",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
+    font-weight : normal;
+    font-style: normal;
+    src : url(../fonts/NotoSans-Medium.ttf);
+}
+
 
 h3.titlepageSub {
   color: black;
@@ -155,7 +162,7 @@ video {
 }
 
 @page {
-  size: 127mm 203mm;
+  size: 152mm 229mm;
   margin-top: 15mm;
   margin-bottom: 15mm;
 }
@@ -389,6 +396,8 @@ h5 {
 
 body {
   counter-reset: chapter;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .one ol li {
