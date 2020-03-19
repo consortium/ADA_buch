@@ -579,7 +579,7 @@ table td {
 
 }
 
-table a {
+table td a {
  /*word-break: break-all; break words url*/
  word-wrap: break-word;
  overflow-wrap: break-word;
