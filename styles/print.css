@@ -749,7 +749,8 @@ section[data-type="toc"] h4 {
   margin-top: 1.2em;
   margin-bottom: 0em;
   letter-spacing: 0.2pt;
-word-spacing: 1px;
+  word-spacing: 1px;
+  font-size: 10pt;
 }
 
 section[data-type="toc"] ul li {
