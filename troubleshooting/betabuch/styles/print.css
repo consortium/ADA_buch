@@ -579,7 +579,7 @@ table td {
 }
 
 .table-wrapper table.tbnostyle {
-  border-bottom: none;
+  border-bottom: none !important;
 }
 
 table td a {
@@ -615,8 +615,8 @@ tr:first-of-type th {
 }
 
 .table-wrapper table.tbnostyle tr:first-of-type td {
-  background-color: transparente;
-  border-bottom: none;
+  background-color: transparente !important;
+  border-bottom: none !important;
 
 }
 
