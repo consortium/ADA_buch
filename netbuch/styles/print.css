@@ -195,6 +195,12 @@ p:first-of-type {
   text-indent: 0;
 }
 
+.Kolophon p {
+  font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif; }
+
+.Kolophon p + p {
+  text-indent: 0em; }
+
 p.stb { text-indent: 0; margin-top: 0.83em }
 p.mtb { text-indent: 0; margin-top: 2.17em }
 p.ltb { text-indent: 0; margin-top: 3.08em }
@@ -471,15 +477,6 @@ figure figcaption {
   font-style: italic;
 }
 
-section.Kolophon {
-  font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
-  font-size: 10pt;
-  page-break-before: always;
-}
-
-section.Kolophon p + p {
-  text-indent: 0;
-}
 
 table.tbnostyle {
   border-bottom: none !important;
@@ -566,11 +563,11 @@ table {
   font-size: 8pt;
 }
 
-table .tbnostyle {
+table.tbnostyle {
   border-bottom: none !important;
 }
 
-table .tbnostyle tr:first-of-type td {
+table.tbnostyle tr:first-of-type td {
   background-color: transparent !important;
 }
 
