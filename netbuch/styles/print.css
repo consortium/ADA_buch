@@ -196,7 +196,8 @@ p:first-of-type {
 }
 
 .Kolophon p {
-  font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif; }
+  font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
+  font-size:10pt;}
 
 .Kolophon p + p {
   text-indent: 0em; }
