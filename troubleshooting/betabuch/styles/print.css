@@ -578,7 +578,7 @@ table td {
 
 }
 
-.table-wrapper table.tbnostyle {
+table .tbnostyle {
   border-bottom: none !important;
 }
 
@@ -614,10 +614,8 @@ tr:first-of-type th {
 
 }
 
-.table-wrapper table.tbnostyle tr:first-of-type td {
+table .tbnostyle tr:first-of-type td {
   background-color: transparent !important;
-  border-bottom: none !important;
-
 }
 
 tr:first-of-type td {
@@ -750,6 +748,16 @@ table + p + p {
 
 .pagination-empty .pagination-pagenumber {
   display: none;
+}
+
+section[data-type="colophon"] {
+  font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
+  font-size: 10pt;
+  page-break-before: always;
+}
+
+section[data-type="colophon"] p + p {
+  text-indent: 0;
 }
 
 section[data-type="toc"] h1.toc {
