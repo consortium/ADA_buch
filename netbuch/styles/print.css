@@ -671,6 +671,17 @@ table + p + p {
   margin-top: 18pt;
 }
 
+.csl-bib-body {
+  border-top: 1px solid black;
+}
+
+
+.csl-bib-body div {
+  font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
+  font-size:8pt;
+  padding-bottom: 10px;
+}
+
 .pagination-header:nth-of-type(odd) {
   text-align: right;
 }
