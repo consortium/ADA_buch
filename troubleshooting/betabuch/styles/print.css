@@ -615,7 +615,7 @@ tr:first-of-type th {
 }
 
 .table-wrapper table.tbnostyle tr:first-of-type td {
-  background-color: transparente !important;
+  background-color: transparent !important;
   border-bottom: none !important;
 
 }
