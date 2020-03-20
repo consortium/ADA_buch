@@ -242,15 +242,13 @@ pre {
 
 a {
   color: black;
-  font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
-  font-weight: 400;
   text-decoration: none;
-  font-style: none;
-  text-decoration: none;
+  border-bottom: 1px dotted black;
 }
 
 a:hover {
   color: black;
+  border-bottom: 1px solid black;
 }
 
 strong em {
