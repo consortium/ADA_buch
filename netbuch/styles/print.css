@@ -471,20 +471,20 @@ figure figcaption {
   font-style: italic;
 }
 
-section .Kolophon {
+section.Kolophon {
   font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
   font-size: 10pt;
   page-break-before: always;
 }
 
-section .Kolophon p + p {
+section.Kolophon p + p {
   text-indent: 0;
 }
 
-table .tbnostyle {
+table.tbnostyle {
   border-bottom: none !important;
 }
-table .tbnostyle tr:first-of-type td {
+table.tbnostyle tr:first-of-type td {
   background-color: transparent !important;
 }
 
