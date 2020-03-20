@@ -560,8 +560,9 @@ table {
 
 
 table.tbnostyle tr:first-of-type td {
+  font-style: normal!important;
   background-color: transparent !important;
-  border-bottom: none !important;
+  border-bottom: 1px solid rgb(231,231,231)!important;
 }
 
 table caption {
