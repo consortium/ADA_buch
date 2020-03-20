@@ -679,6 +679,7 @@ table + p + p {
   font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
   font-size:8pt;
   padding-bottom: 10px;
+  color: red;
 }
 
 .pagination-header:nth-of-type(odd) {
