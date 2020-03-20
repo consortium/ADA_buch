@@ -675,8 +675,7 @@ table + p + p {
   border-top: 1px solid black;
 }
 
-
-.csl-bib-body div {
+.csl-entry {
   font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
   font-size:8pt;
   padding-bottom: 10px;
