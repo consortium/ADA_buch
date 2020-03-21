@@ -256,7 +256,6 @@ a {
 }
 
 a:hover {
-  color: black;
   border-bottom: 1px solid black;
 }
 
@@ -1036,11 +1035,10 @@ h2 {
   top: 9mm;
 }
 
-.footer {
+.footerurl {
   content: url("http://www.example.com/test.png");
   height: 13pt;
   position: absolute;
-  bottom: 8mm;
 }
 
 /* flows */
@@ -1136,7 +1134,6 @@ h2 {
   }
 }
 
-ul
 
 /* colophon */
 
@@ -1150,6 +1147,16 @@ ul
     top: 24mm;
     bottom: 20mm;
   }
+}
+
+/* Footer URL */
+@-epubx-partition class(footerurl) {
+  -epubx-flow-from: footerurl;
+  -epubx-required: true;
+  left: -epubx-expr( page-number % 2==1 ? 20mm: 15mm);
+  right: -epubx-expr( page-number % 2==0 ? 20mm: 15mm);
+  top: 24mm;
+  bottom: 20mm;
 }
 
 /* create the layout of the body */
@@ -1186,13 +1193,6 @@ ul
   @-epubx-partition class(pagenumber) {
     -epubx-enabled: -epubx-expr( page-number % 2==1 ? 'true': 'false');
     right: 15mm;
-  }
-
-  /* Footer URL */
-  @-epubx-partition class(footerurl) {
-    -epubx-flow-from: urlfooter;
-    -epubx-enabled: -epubx-expr( page-number % 2==0 ? 'true': 'false');
-    left: 40mm;
   }
 
   /* horizontal running header */
