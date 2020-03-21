@@ -514,6 +514,23 @@ ul {
   line-height: 14pt;
 }
 
+table ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 9pt;
+  margin-bottom: 9pt;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 20px;
+  font-size: 9pt;
+  line-height: 14pt;
+  color: red;
+}
+
+li p {
+    white-space: nowrap;
+}
+
 #page-navigation ol {
     margin: 0;
     padding: 0;
@@ -1090,19 +1107,7 @@ h2 {
   }
 }
 
-/* title for chapters */
-
-@-epubx-page-master chaptertitle {
-  -epubx-utilization: 0;
-  @-epubx-partition chaptertitle {
-    -epubx-flow-from: chaptertitle;
-    -epubx-required: true;
-    left: -epubx-expr( page-number % 2==1 ? 20mm: 15mm);
-    right: -epubx-expr( page-number % 2==0 ? 20mm: 15mm);
-    top: 15mm;
-    bottom: 20mm;
-  }
-}
+ul
 
 /* colophon */
 
