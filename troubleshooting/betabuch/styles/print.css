@@ -396,7 +396,7 @@ h5 {
 }
 
 body {
-  counter-reset: chapter;
+  counter-reset: chapter figure-cat-0 figure-cat-1 figure-cat-2 footnote-counter footnote-marker-counter;
   overflow-wrap: break-word;
 }
 
@@ -469,6 +469,26 @@ figure figcaption {
   text-align: center;
   font-size: 8pt;
   font-style: italic;
+}
+
+/*From Fidus writer*/
+.figure-cat-figure::after {
+    counter-increment: figure-cat-0;
+    content: ' ' counter(figure-cat-0);
+}
+
+.figure-cat-photo::after {
+    counter-increment: figure-cat-1;
+    content: ' ' counter(figure-cat-1);
+}
+
+.figure-cat-table::after {
+    counter-increment: figure-cat-2;
+    content: ' ' counter(figure-cat-2);
+}
+
+.figure-cat-figure + span::before, .figure-cat-photo + span::before, .figure-cat-table + span::before {
+    content: ': ';
 }
 
 .icon {
@@ -605,8 +625,14 @@ table ol {
 
 table ol,
 table ul {
-  list-style-position: inside;
+  /*list-style-position: inside;*/
 }
+
+table li {
+  vertical-align:top;
+}
+
+
 
 tr:first-of-type th {
   padding-top: 1em;
