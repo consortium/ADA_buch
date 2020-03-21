@@ -171,7 +171,7 @@ html {
   font-family: -apple-system,BlinkMacSystemFont,"noto serif",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
   font-weight: normal;
   font-size: 10.75pt;
-  color: cyan;
+  color: black;
   hyphens: auto;
 }
 
@@ -1035,11 +1035,11 @@ h2 {
   top: 9mm;
 }
 
-.footerurl {
+/*.footerurl {
   content: 'DOI ' url("https://doi.org/10.25815/h0ec-f967");
   height: 13pt;
   position: absolute;
-}
+}*/
 
 /* flows */
 
@@ -1149,12 +1149,12 @@ h2 {
   }
 }
 
-/* Footer URL */
+/* Footer URL
 @-epubx-partition class(footerurl) {
   -epubx-flow-from: footerurl;
   top: 250mm;
   bottom: 20mm;
-}
+}*/
 
 /* create the layout of the body */
 
