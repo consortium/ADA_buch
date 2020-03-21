@@ -657,7 +657,7 @@ table li {
 
 table li p {
     /*white-space: nowrap !important;*/
-    color: cyan;
+    color: red;
     /*display: inline-block;*/
 }
 
