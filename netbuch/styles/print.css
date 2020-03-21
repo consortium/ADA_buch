@@ -548,7 +548,7 @@ table ul {
 }
 
 li p {
-    white-space: nowrap !important;
+    /*white-space: nowrap !important;*/
     color: green;
     display: inline-block;
     margin: 0;
