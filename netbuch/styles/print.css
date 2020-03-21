@@ -23,7 +23,7 @@
     src : url(../fonts/NotoSans-BoldItalic.ttf);
 }
 -@font-face {
-    font-family : -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
+    font-family : -apple-system,BlinkMacSystemFont,"noto sans medium",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
     font-weight : normal;
     font-style: normal;
     src : url(../fonts/NotoSans-Medium.ttf);
@@ -370,7 +370,7 @@ h1 {
 }
 
 h2 {
-  font-size: 15pt;
+  font-size: 16pt;
   font-family: "noto sans medium", helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
   text-transform: none;
   font-weight: normal;
