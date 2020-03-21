@@ -959,8 +959,8 @@ section[data-type="chaptertitle"] {
  break-before: right;
 }
 
-section[data-type="chapter"], {
- break-after: always;;
+section[data-type="chapter"] {
+ break-after: always;
 }
 
 h2 {
