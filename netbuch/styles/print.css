@@ -650,13 +650,6 @@ tr:first-of-type {
     font-weight: normal;
 }
 
-/*tr:first-of-type td {
-  font-style: italic;
-  font-weight: bold;
-  backgroung-color: rgb(215,238,243);
-  border-bottom: 2px solid #435772;
-}*/
-
 tr.head + tr td {
   padding-top: 0.8em;
 }
@@ -1034,6 +1027,12 @@ h2 {
 
 /* pages layout */
 
+@page {
+  @bottom-center {
+    content: "BOOK name"
+  }
+}
+
 @-epubx-page-master first-page-cover {
   -epubx-page: 1;
   background: url("../images/cover.jpg");
@@ -1161,7 +1160,7 @@ h2 {
     -epubx-enabled: -epubx-expr( page-number % 2==0 ? 'true': 'false');
     left: 15mm;
   }
-  /* page numbering right */
+  /* horizontal running header */
  @-epubx-partition class(header) {
     -epubx-flow-from: booktitle;
     -epubx-enabled: -epubx-expr( page-number % 2==1 ? 'true': 'false');
