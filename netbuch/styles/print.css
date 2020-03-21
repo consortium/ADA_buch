@@ -546,12 +546,6 @@ table ul {
   line-height: 14pt;
 }
 
-li p {
-    /*white-space: nowrap !important;*/
-    color: green;
-    display: inline-block;
-}
-
 #page-navigation ol {
     margin: 0;
     padding: 0;
@@ -650,9 +644,22 @@ table ol {
   text-indent: 0;
 }
 
+
+
+
 table ol,
 table ul {
-  list-style-position: outside;
+  /*list-style-position: outside;*/
+}
+
+table li {
+  vertical-align:top;
+}
+
+table li p {
+    /*white-space: nowrap !important;*/
+    color: blue;
+    display: inline-block;
 }
 
 tr:first-of-type th {
