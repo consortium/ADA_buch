@@ -658,8 +658,8 @@ table li {
 
 table li p {
     /*white-space: nowrap !important;*/
-    color: blue;
-    display: inline-block;
+    color: red;
+    /*display: inline-block;*/
 }
 
 tr:first-of-type th {
