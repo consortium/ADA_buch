@@ -36,10 +36,10 @@
 }
 
 -@font-face {
-    font-family : -apple-system,BlinkMacSystemFont,"noto sans black",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
-    font-weight : 900;
+    font-family : -apple-system,BlinkMacSystemFont,"noto sans extra",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
+    font-weight : 800;
     font-style: normal;
-    src : url(../fonts/NotoSans-Black.ttf);
+    src : url(../fonts/NotoSans-ExtraBold.ttf);
 }
 
 
@@ -253,8 +253,8 @@ table li strong,
 table li .bold,
 table li .Bold,
 table li b {
-  font-family: -apple-system,BlinkMacSystemFont,"noto sans black",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
-  font-weight: 900;
+  font-family: -apple-system,BlinkMacSystemFont,"noto sans extra",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
+  font-weight: 800;
 }
 
 em,
