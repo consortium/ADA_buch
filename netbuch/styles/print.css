@@ -195,6 +195,10 @@ p:first-of-type {
   text-indent: 0;
 }
 
+.noindent p + p  {
+  text-indent: 0;
+}
+
 .Kolophon p {
   font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
   font-size:8pt;
@@ -289,6 +293,8 @@ sup {
 }
 
 blockquote {
+  display: block;
+  width: 80%;
   position: relative;
   font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
   font-size: 9.75pt;
@@ -301,7 +307,7 @@ blockquote {
 
 blockquote:before {
   font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
-  /*content: open-quote;*/
+content: open-quote;
   font-size: 2em;
   left: 15px;
   top: -15px;
@@ -314,7 +320,7 @@ blockquote:before {
 
 blockquote:after {
   font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
-  /*content: close-quote;*/
+  content: close-quote;
   font-size: 1em;
   bottom: -15pt;
   right: -0.8pc;
