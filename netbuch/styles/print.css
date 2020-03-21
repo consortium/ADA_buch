@@ -257,7 +257,7 @@ a {
 
 a:hover {
   color: black;
-  border-bottom: 1px solider black;
+  border-bottom: 1px solid black;
 }
 
 strong em {
@@ -544,14 +544,12 @@ table ul {
   padding-left: 30px;
   font-size: 9pt;
   line-height: 14pt;
-
 }
 
 li p {
     /*white-space: nowrap !important;*/
     color: green;
     display: inline-block;
-    margin: 0;
 }
 
 #page-navigation ol {
@@ -654,7 +652,7 @@ table ol {
 
 table ol,
 table ul {
-  list-style-position: inside;
+  list-style-position: outside;
 }
 
 tr:first-of-type th {
