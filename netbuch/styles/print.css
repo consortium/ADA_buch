@@ -301,7 +301,7 @@ blockquote {
 
 blockquote:before {
   font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
-  content: open-quote;
+  /*content: open-quote;*/
   font-size: 2em;
   left: 15px;
   top: -15px;
@@ -314,7 +314,7 @@ blockquote:before {
 
 blockquote:after {
   font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
-  content: close-quote;
+  /*content: close-quote;*/
   font-size: 1em;
   bottom: -15pt;
   right: -0.8pc;
@@ -1036,10 +1036,9 @@ h2 {
 }
 
 .footerurl {
-  content: url("https://doi.org/10.25815/h0ec-f967");
+  content: 'DOI ' url("https://doi.org/10.25815/h0ec-f967");
   height: 13pt;
   position: absolute;
-  top: 9mm;
 }
 
 /* flows */
