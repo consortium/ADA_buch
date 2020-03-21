@@ -171,7 +171,7 @@ html {
   font-family: -apple-system,BlinkMacSystemFont,"noto serif",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
   font-weight: normal;
   font-size: 10.75pt;
-  color: black;
+  color: cyan;
   hyphens: auto;
 }
 
@@ -1153,9 +1153,7 @@ h2 {
 /* Footer URL */
 @-epubx-partition class(footerurl) {
   -epubx-flow-from: footerurl;
-  left: -epubx-expr( page-number % 2==1 ? 20mm: 15mm);
-  right: -epubx-expr( page-number % 2==0 ? 20mm: 15mm);
-  top: 100mm;
+  top: 250mm;
   bottom: 20mm;
 }
 
