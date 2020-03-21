@@ -549,7 +549,9 @@ table ul {
 
 li p {
     white-space: nowrap !important;
-    color: blue;
+    color: green;
+    display: inline-block;
+    margin: 0;
 }
 
 #page-navigation ol {
