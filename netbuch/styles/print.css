@@ -195,7 +195,7 @@ p:first-of-type {
   text-indent: 0;
 }
 
-.noindent p + p  {
+.noindent p + p {
   text-indent: 0;
 }
 
