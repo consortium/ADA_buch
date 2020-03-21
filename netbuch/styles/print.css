@@ -1037,7 +1037,7 @@ h2 {
 }
 
 .footer {
-  content: ¨BOOK URL¨;
+  content: url("http://www.example.com/test.png");
   height: 13pt;
   position: absolute;
   bottom: 8mm;
