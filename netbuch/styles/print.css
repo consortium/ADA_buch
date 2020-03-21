@@ -657,7 +657,7 @@ table li {
 
 table li p {
     /*white-space: nowrap !important;*/
-    color: blue;
+    color: cyan;
     /*display: inline-block;*/
 }
 
@@ -1036,9 +1036,10 @@ h2 {
 }
 
 .footerurl {
-  content: url("http://www.example.com/test.png");
+  content: url("https://doi.org/10.25815/h0ec-f967");
   height: 13pt;
   position: absolute;
+  top: 9mm;
 }
 
 /* flows */
@@ -1152,10 +1153,9 @@ h2 {
 /* Footer URL */
 @-epubx-partition class(footerurl) {
   -epubx-flow-from: footerurl;
-  -epubx-required: true;
   left: -epubx-expr( page-number % 2==1 ? 20mm: 15mm);
   right: -epubx-expr( page-number % 2==0 ? 20mm: 15mm);
-  top: 24mm;
+  top: 100mm;
   bottom: 20mm;
 }
 
