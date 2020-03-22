@@ -1058,7 +1058,7 @@ h2 {
 .footerurl {
   height: 13pt;
   position: absolute;
-  content: "DOI: " url("https://doi.org/10.25815/h0ec-f967");
+  content: "DOI: https://doi.org/10.25815/h0ec-f967";
   bottom: 8mm;
   text-align: center;
   font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
@@ -1274,13 +1274,13 @@ h2 {
  @-epubx-partition class(footerurl) {
     /*-epubx-flow-from: body;*/
     -epubx-enabled: -epubx-expr( page-number % 2==0 ? 'true': 'false');
-    left: 55mm;
+    left: 40mm;
   }
   /* page numbering right */
  @-epubx-partition class(footerurl) {
     /*-epubx-flow-from: body;*/
     -epubx-enabled: -epubx-expr( page-number % 2==1 ? 'true': 'false');
-    right: 75mm;
+    right: 112mm;
   }
 
   /* vertical ok */
