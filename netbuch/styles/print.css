@@ -1280,7 +1280,7 @@ h2 {
  @-epubx-partition class(footerurl) {
     /*-epubx-flow-from: body;*/
     -epubx-enabled: -epubx-expr( page-number % 2==1 ? 'true': 'false');
-    right: 90mm;
+    left: 50mm;
   }
 
   /* vertical ok */
