@@ -1055,6 +1055,13 @@ h2 {
   top: 9mm;
 }
 
+.footerurl {
+  height: 13pt;
+  position: absolute;
+  content: "BOOK URL";
+  bottom: 15mm;
+}
+
 /* flows */
 
 [data-type="chaptertitle"] {
@@ -1257,6 +1264,19 @@ h2 {
     -epubx-flow-from: booktitle;
     -epubx-enabled: -epubx-expr( page-number % 2==1 ? 'true': 'false');
     right: 15mm;
+  }
+
+  /* horizontal running header */
+ @-epubx-partition class(footerurl) {
+    -epubx-flow-from: footerurl;
+    -epubx-enabled: -epubx-expr( page-number % 2==0 ? 'true': 'false');
+    left: 45mm;
+  }
+  /* page numbering right */
+ @-epubx-partition class(footerurl) {
+    -epubx-flow-from: footerurl;
+    -epubx-enabled: -epubx-expr( page-number % 2==1 ? 'true': 'false');
+    right: 45mm;
   }
 
   /* vertical ok */
