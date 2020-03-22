@@ -271,11 +271,11 @@ pre {
 a {
   color: #000;
   text-decoration: none;
-  border-bottom: 1px dashed rgb(230,230,230);
+  border-bottom: 1px dashed rgb(101,100,98);
 }
 
 a:hover {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid rgb(101,100,98);
 }
 
 strong em {
@@ -319,7 +319,7 @@ blockquote {
   margin-left: 3pc;
   margin-right: 1pc;
   font-style: italic;
-  border-right: 2px solid rgb(15,100,167);
+  /*border-right: 2px solid rgb(15,100,167);*/
 }
 
 blockquote:before {
@@ -327,8 +327,8 @@ blockquote:before {
   content: "“";
   /*quotes:  "”" "‘" "’";*/
   font-size: 4em;
-  left: -30px;
-  top: 0px;
+  left: -45px;
+  top: -10px;
   z-index: 5;
   /*top: -0.2pc;
   left: -1.2pc;*/
