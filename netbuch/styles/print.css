@@ -317,7 +317,7 @@ blockquote {
   margin-top: 9pt;
   margin-bottom: 9pt;
   margin-left: 3pc;
-  margin-right: 0pc;
+  margin-right: 1pc;
   font-style: italic;
   border-right: 2px solid rgb(15,100,167);
 }
@@ -327,8 +327,8 @@ blockquote:before {
   content: "“";
   /*quotes:  "”" "‘" "’";*/
   font-size: 4em;
-  left: -15px;
-  top: 5px;
+  left: -30px;
+  top: 0px;
   z-index: 5;
   /*top: -0.2pc;
   left: -1.2pc;*/
