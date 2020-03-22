@@ -1268,13 +1268,13 @@ h2 {
 
   /* horizontal running header */
  @-epubx-partition class(footerurl) {
-    -epubx-flow-from: footerurl;
+    -epubx-flow-from: body;
     -epubx-enabled: -epubx-expr( page-number % 2==0 ? 'true': 'false');
     left: 45mm;
   }
   /* page numbering right */
  @-epubx-partition class(footerurl) {
-    -epubx-flow-from: footerurl;
+    -epubx-flow-from: body;
     -epubx-enabled: -epubx-expr( page-number % 2==1 ? 'true': 'false');
     right: 45mm;
   }
