@@ -311,7 +311,7 @@ blockquote {
   display: block;
   width: 80%;
   position: relative;
-  font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,"noto serif",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
   font-size: 11pt;
   vertical-align: baseline;
   margin-top: 9pt;
@@ -323,12 +323,12 @@ blockquote {
 }
 
 blockquote:before {
-  font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,"noto serif",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
   content: "“";
   /*quotes:  "”" "‘" "’";*/
-  font-size: 2em;
+  font-size: 4em;
   left: -15px;
-  top: -15px;
+  top: 5px;
   z-index: 5;
   /*top: -0.2pc;
   left: -1.2pc;*/
@@ -339,7 +339,7 @@ blockquote:before {
 
 /*blockquote:after {
   font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
-  content: close-quote;
+  content: "”";
   font-size: 2em;
   bottom: -15pt;
   right: -0.8pc;
