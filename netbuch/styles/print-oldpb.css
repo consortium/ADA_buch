@@ -23,18 +23,6 @@
     src : url(../fonts/NotoSans-BoldItalic.ttf);
 }
 -@font-face {
-    font-family : -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
-    font-weight : normal;
-    font-style: normal;
-    src : url(../fonts/NotoSans-Medium.ttf);
-}
--@font-face {
-    font-family : -apple-system,BlinkMacSystemFont,"noto serif",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
-    font-weight : normal;
-    font-style: normal;
-    src : url(../fonts/NotoSerif-Regular.ttf);
-}
--@font-face {
     font-family : -apple-system,BlinkMacSystemFont,"noto sans medium",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
     font-weight : normal;
     font-style: normal;
@@ -48,15 +36,13 @@
 }
 
 -@font-face {
-    font-family : -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
+    font-family : -apple-system,BlinkMacSystemFont,"noto sans extra",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
     font-weight : 800;
     font-style: normal;
     src : url(../fonts/NotoSans-ExtraBold.ttf);
 }
 
-.noindent p + p {
-  text-indent: 0;
-}
+
 
 h3.titlepageSub {
   color: black;
@@ -217,6 +203,13 @@ p:first-of-type {
   text-indent: 0;
 }
 
+.noindent p + p {
+  text-indent: 0;
+}
+
+.noindent .indent p + p {
+  text-indent: 1.5em;
+}
 .Kolophon p {
   font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
   font-size:8pt;
@@ -255,7 +248,7 @@ p b,
 li strong,
 li .bold,
 li .Bold,
-li b {
+li b{
   font-weight: 700;
 }
 
@@ -263,7 +256,7 @@ table li strong,
 table li .bold,
 table li .Bold,
 table li b {
-  font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,"noto sans extra",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
   font-weight: 700;
 }
 
@@ -286,6 +279,10 @@ a {
 
 a:hover {
   border-bottom: 1px solid rgb(101,100,98);
+}
+
+.article-body a {
+  target-new:tab;
 }
 
 strong em {
@@ -329,15 +326,19 @@ blockquote {
   margin-left: 3pc;
   margin-right: 1pc;
   font-style: italic;
+  /*border-right: 2px solid rgb(15,100,167);*/
 }
 
 blockquote:before {
   font-family: -apple-system,BlinkMacSystemFont,"noto serif",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
   content: "“";
+  /*quotes:  "”" "‘" "’";*/
   font-size: 4em;
   left: -45px;
   top: -10px;
   z-index: 5;
+  /*top: -0.2pc;
+  left: -1.2pc;*/
   position: absolute;
   color: rgb(58,172,196);
   opacity: 0.8;
@@ -345,13 +346,13 @@ blockquote:before {
 
 /*blockquote:after {
   font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
-  content: close-quote;
-  font-size: 1em;
+  content: "”";
+  font-size: 2em;
   bottom: -15pt;
   right: -0.8pc;
   position: absolute;
-  color: #7089ab;
-  opacity: 0.6;
+  color: rgb(58,172,196);
+  opacity: 0.8;
 }*/
 
 blockquote p {
@@ -373,8 +374,11 @@ h6 {
   font-weight: normal;
 }
 
+h1 strong { font-weight: normal;}
+
 h1 {
   font-family : -apple-system,BlinkMacSystemFont,"noto serif medium",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
+  font-weight: bold;
   font-size: 24pt;
   color: rgb(58,172,196);
   margin-bottom: 2em;
@@ -391,10 +395,8 @@ h1 {
   word-spacing: 1px;
 }
 
-h1 strong { font-weight: normal;}
-
 h2 {
-  font-size: 15pt;
+  font-size: 16pt;
   font-family: "noto sans medium", helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
   text-transform: none;
   font-weight: normal;
@@ -564,6 +566,18 @@ ul {
   line-height: 14pt;
 }
 
+table ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 9pt;
+  margin-bottom: 9pt;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 30px;
+  font-size: 9pt;
+  line-height: 14pt;
+}
+
 #page-navigation ol {
     margin: 0;
     padding: 0;
@@ -581,11 +595,6 @@ ol {
   padding-left: 40px;
   font-size: 9pt;
   line-height: 14pt;
-}
-
-a {
-  color: black;
-  text-decoration: none;
 }
 
 
@@ -671,6 +680,11 @@ table li {
   vertical-align:top;
 }
 
+table li strong {
+    font-family: -apple-system,BlinkMacSystemFont,"noto sans black",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
+    font-weight: 900;
+}
+
 tr:first-of-type th {
   padding-top: 1em;
   padding-bottom: 1em;
@@ -696,20 +710,13 @@ th {
   border-left: 0;
   border-right: 0;
   padding: 1em;
-  color: : black;
+  color: black;
   font-style: italic;
 }
 
 tr:first-of-type {
     font-weight: normal;
 }
-
-/*tr:first-of-type td {
-  font-style: italic;
-  font-weight: bold;
-  backgroung-color: rgb(215,238,243);
-  border-bottom: 2px solid #435772;
-}*/
 
 tr.head + tr td {
   padding-top: 0.8em;
@@ -854,7 +861,7 @@ section[data-type="toc"] ul li:before {
 }
 
 section[data-type="toc"] a {
-  color: black;
+  color: #000;
   font-weight: 500;
   border-bottom: 0px solid transparent;
   background: none;
@@ -984,8 +991,8 @@ section[data-type="chaptertitle"] {
  break-before: right;
 }
 
-section[data-type="chapter"] {
- break-after: always;
+section[data-type="chapter"], {
+ break-after: always;;
 }
 
 section[data-type="frontmatter"] {
@@ -1052,6 +1059,12 @@ h2 {
   top: 9mm;
 }
 
+/*.footerurl {
+  content: 'DOI ' url("https://doi.org/10.25815/h0ec-f967");
+  height: 13pt;
+  position: absolute;
+}*/
+
 /* flows */
 
 [data-type="chaptertitle"] {
@@ -1099,40 +1112,6 @@ h2 {
   background-size: cover;
 }
 
-@-epubx-page-master second-page-backcover {
-  -epubx-page: 12;
-  background-size: cover;
-}
-
-@-epubx-page-master second-page-backcover {
-  -epubx-page: 60;
-  background-size: cover;
-}
-
-@-epubx-page-master second-page-backcover {
-  -epubx-page: 84;
-  background-size: cover;
-}
-
-@-epubx-page-master second-page-backcover {
-  -epubx-page: 98;
-  background-size: cover;
-}
-
-@-epubx-page-master second-page-backcover {
-  -epubx-page: 102;
-  background-size: cover;
-}
-
-@-epubx-page-master second-page-backcover {
-  -epubx-page: 108;
-  background-size: cover;
-}
-
-@-epubx-page-master second-page-backcover {
-  -epubx-page: 114;
-  background-size: cover;
-}
 
 @-epubx-page-master titlepagepage {
   @-epubx-partition body {
@@ -1179,19 +1158,6 @@ h2 {
   }
 }
 
-/* title for chapters */
-
-@-epubx-page-master chaptertitle {
-  -epubx-utilization: 0;
-  @-epubx-partition chaptertitle {
-    -epubx-flow-from: chaptertitle;
-    -epubx-required: true;
-    left: -epubx-expr( page-number % 2==1 ? 20mm: 15mm);
-    right: -epubx-expr( page-number % 2==0 ? 20mm: 15mm);
-    top: 15mm;
-    bottom: 20mm;
-  }
-}
 
 /* colophon */
 
@@ -1206,6 +1172,13 @@ h2 {
     bottom: 20mm;
   }
 }
+
+/* Footer URL
+@-epubx-partition class(footerurl) {
+  -epubx-flow-from: footerurl;
+  top: 250mm;
+  bottom: 20mm;
+}*/
 
 /* create the layout of the body */
 
@@ -1249,12 +1222,18 @@ h2 {
     -epubx-enabled: -epubx-expr( page-number % 2==0 ? 'true': 'false');
     left: 15mm;
   }
-  /* page numbering right */
+  /* horizontal running header */
  @-epubx-partition class(header) {
     -epubx-flow-from: booktitle;
     -epubx-enabled: -epubx-expr( page-number % 2==1 ? 'true': 'false');
     right: 15mm;
   }
+  /* horizontal running footer */
+ @-epubx-partition class(footerurl) {
+    -epubx-enabled: -epubx-expr( page-number % 2==1 ? 'true': 'false');
+    right: 35mm;
+  }
+
 
   /* vertical ok */
   /*   @-epubx-partition headervertical {
