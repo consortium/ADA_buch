@@ -269,13 +269,13 @@ pre {
 }
 
 a {
-  color: black;
+  color: #000;
   text-decoration: none;
-  border-bottom: 1px dotted black;
+  border-bottom: 1px dashed #000;
 }
 
 a:hover {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000;
 }
 
 strong em {
@@ -311,7 +311,7 @@ blockquote {
   display: block;
   width: 80%;
   position: relative;
-  font-family: -apple-system,BlinkMacSystemFont,"noto serif",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
   font-size: 11pt;
   vertical-align: baseline;
   margin-top: 9pt;
@@ -590,11 +590,6 @@ ol {
   line-height: 14pt;
 }
 
-a {
-  color: black;
-  text-decoration: none;
-}
-
 
 /*styles IMG TABLES*/
 
@@ -859,7 +854,7 @@ section[data-type="toc"] ul li:before {
 }
 
 section[data-type="toc"] a {
-  color: black;
+  color: #000;
   font-weight: 500;
   border-bottom: 0px solid transparent;
   background: none;
