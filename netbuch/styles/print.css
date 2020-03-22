@@ -1058,8 +1058,8 @@ h2 {
 .footerurl {
   height: 13pt;
   position: absolute;
-  content: "BOOK URL";
-  bottom: 10mm;
+  content: "DOI: " url("https://doi.org/10.25815/h0ec-f967");		
+  bottom: 8mm;
 }
 
 /* flows */
