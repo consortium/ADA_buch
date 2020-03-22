@@ -278,6 +278,10 @@ a:hover {
   border-bottom: 1px solid rgb(101,100,98);
 }
 
+.article-body a {
+  target-new:tab;
+}
+
 strong em {
   font-weight: bold;
   font-style: italic;
