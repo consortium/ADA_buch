@@ -1286,12 +1286,12 @@ h2 {
   /* footer url left */
  @-epubx-partition class(footerurlLeft) {
     -epubx-enabled: -epubx-expr( page-number % 2==0 ? 'true': 'false');
-    right: 30mm;
+    left: 57mm;
   }
   /* footer url right */
  @-epubx-partition class(footerurlRight) {
     -epubx-enabled: -epubx-expr( page-number % 2==1 ? 'true': 'false');
-    left: 20mm;
+    left: 34mm;
   }
 
   /* vertical ok */
