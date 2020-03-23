@@ -1274,13 +1274,13 @@ h2 {
  @-epubx-partition class(footerurl) {
     /*-epubx-flow-from: body;*/
     -epubx-enabled: -epubx-expr( page-number % 2==0 ? 'true': 'false');
-    left: 40mm;
+    left: 55mm;
   }
   /* page numbering right */
  @-epubx-partition class(footerurl) {
     /*-epubx-flow-from: body;*/
     -epubx-enabled: -epubx-expr( page-number % 2==1 ? 'true': 'false');
-    left: 50mm;
+    left: 40mm;
   }
 
   /* vertical ok */
