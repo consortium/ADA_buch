@@ -1060,10 +1060,10 @@ h2 {
   height: 13pt;
   position: absolute;
   content: "Kommentar mit hypothes.is DOI https://doi.org/10.25815/h0ec-f967";
-  bottom: 7mm;
+  bottom: 7.3mm;
   text-align: center;
   font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
-  font-size: 7.5pt;
+  font-size: 7.25pt;
   font-style: normal;
 }
 
@@ -1071,7 +1071,7 @@ h2 {
   height: 13pt;
   position: absolute;
   content: "Pre-release v1.0";
-  bottom: 7mm;
+  bottom: 7.25mm;
   text-align: center;
   font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,"segoe ui",arial,sans-serif;
   font-size: 7.5pt;
